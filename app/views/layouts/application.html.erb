@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Activities List</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <section id="menu">
+      <%= render "shared/menu" %>
+    </section>
+
+    <section id="content">
+      <%= yield %>
+    </section>
+
+    <section id="footer">
+      <footer>
+        <%= render "shared/footer" %>
+      </footer>
+    </section>
+
+  </body>
+  
+</html>
